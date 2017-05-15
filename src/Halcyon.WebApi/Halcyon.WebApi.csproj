@@ -21,12 +21,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Halcyon\Halcyon.csproj" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <ProjectReference Include="..\Halcyon\Halcyon.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
